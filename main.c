@@ -5,21 +5,16 @@
 
 int main(int argc, char *argv[]) 
 {
-	unsigned int x;
-	int b;
-	 
-	printf("input a number : ");
-	scanf("%ui", &x);
+	int x, y, z, m;
 	
-	for (b = 0; x != 0; x >>= 1)
-	{
-		if (x & 1)
-		{
-			b = b + 1;
-		}
-	}
+	printf("input the second : ");
+	scanf("%i", &x);
 	
-	printf("THe result is : %i \n", b);
+	y = x / 3600;
+	z = (x - y*3600) / 60;
+	m = x - y*3600 - z*60 ; 
+	
+	printf("The time for %i second is %i : %i : %i \n", x, y, z, m);
 	
 	return 0;
 }
