@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	y = a*x*x + b*x + c;
 	m = (x + y + z)/3;
 	
-	printf("y = %d, m = %d", y, m);
+	printf("y = %d, m = %d \n", y, m);
 	
 	return 0;
 }
